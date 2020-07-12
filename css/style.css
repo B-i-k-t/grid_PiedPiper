@@ -1,0 +1,234 @@
+/* roboto-regular - latin */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto'), local('Roboto-Regular'),
+         url('../fonts/roboto-v20-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/roboto-v20-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  
+  /* roboto-500 - latin */
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Roboto Medium'), local('Roboto-Medium'),
+         url('../fonts/roboto-v20-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/roboto-v20-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  
+  /* roboto-900 - latin */
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    src: local('Roboto Black'), local('Roboto-Black'),
+         url('../fonts/roboto-v20-latin-900.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/roboto-v20-latin-900.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  html{
+    box-sizing: border-box;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.2;
+    color: #000000;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.wrapper{
+    max-width: 1219px;
+    margin: 0 auto;
+}
+/* header styles start */
+
+.header__wrapper{
+    width: 1219px;
+    background-color: #007765;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 55px;
+    align-items: center;
+    position: fixed;
+}
+
+.header__list{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+.header__item{
+    margin-right: 8px;
+    font-size: 24px;
+    line-height: 28px;
+    color: white;
+}
+.header__item:last-child{
+    margin-right: 0;
+}
+.header__link{
+    text-decoration: none;
+    color: white;
+}
+.header__link:hover, .header__link:focus, .header__link:active{
+    opacity: .75;
+}
+/* header styles end */
+
+/* intro styles start */
+.intro{
+    height: 100%;
+    background: url(../img/intro.png) no-repeat center;
+    background-size: cover;
+    padding: 160px 0;
+}
+.intro__title{
+    text-align: center;
+    font-size: 72px;
+    line-height: 84px;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+/* intro styles end */
+/* problem styles start */
+.content__problem{
+    padding: 0 55px 0 55px;
+    margin: 0;
+}
+.problem__title{
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 75px;
+    color: #007765;
+    text-align: center;
+}
+.problem__text{
+    font-size: 32px;
+    line-height: 37px;
+    color: #000000;
+}
+/* problem styles end */
+
+/*hero styles start */
+
+.content__hero{
+    margin: 0;
+    height: 100%;
+    background: url(../img/image_hero.jpg) no-repeat center;
+    background-size: cover;
+}
+.hero__text{
+    padding: 128px 163px;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+/* hero styles end */
+
+/* PPC styles start */
+
+.content__ppc{
+    padding: 0 55px;
+}
+
+.ppc__title{
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 75px;
+    text-align: center;
+    color: #007765;
+}
+
+.ppc__logo__img{
+    float: left;
+    width: 115px;
+    height: 115px;
+    margin-right: 48px;
+}
+.logo__p{
+    font-size: 32px;
+    line-height: 37px;
+    color: #000000;
+}
+.logo__p__italic{
+    font-style: italic;
+}
+.ppc__text{
+    font-size: 32px;
+    line-height: 37px;
+    color: #000000;
+}
+/* PPC styles end */
+
+/* Team styles start */
+
+.content__team{
+    padding: 0 55px;
+}
+.team__title{
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 75px;
+    text-align: center;
+    color: #007765;
+}
+.teams__cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    grid-template-rows: repeat(2, 1fr);
+}
+.teams__card{
+    grid-column: span 1;
+}
+.teams__pic{
+    max-width: 168px;
+    margin: 0 auto;
+}
+.teams__card-title{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: #007765;
+}
+.teams__card-desc{
+    font-style: italic;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #000000;
+}
+
+/* Team styles end */
+
+/* Footer styles start */
+.footer__block{
+    background: #333333;
+    padding: 48px 55px 64px 55px;
+}
+.footer__text{
+    margin: 0 340px;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+/* Footer styles end */
